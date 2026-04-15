@@ -1,0 +1,51 @@
+body{
+    background-color: aqua;
+}
+.main_page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#title_card {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    width: 75%;
+}
+#title_text{
+    font-size: 10vw;
+    text-align: center;
+}
+
+#balloons {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+#balloons_img{
+    width: 70%;
+}
+#cake {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+#cake_img{
+    width: 100%;
+}
+#send_text{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#send_link{
+    font-size: 5vw;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
