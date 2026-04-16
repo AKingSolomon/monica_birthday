@@ -18,7 +18,7 @@ header{
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -35%);
+    transform: translate(-50%, -45%);
     width: 100%;
 }
 #title_text{
@@ -36,7 +36,7 @@ header{
 }
 #cake {
     position: absolute;
-    bottom: 30%;
+    bottom: 25%;
     left: 50%;
 }
 #cake_img{
@@ -44,7 +44,7 @@ header{
 }
 #send_text{
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
 }
