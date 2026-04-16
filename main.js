@@ -4,26 +4,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const balloons = document.querySelector('#balloons');
     const cake = document.querySelector('#cake');
 
-    let bx = -300;
+    let bx = -280;
     let by = -40;
     let cx = 100;
-    let cy= 0;
+    let cy = -10;
 
     setInterval(() => {
-        if(bx < -240){
+        if(bx < -180){
         bx += 1;
         }
-        if(cx > 40){
+        if(cx > 0){
             cx -= 1;
         }
         balloons.style.transform = `translate(${bx}px, ${by}px)`;
         cake.style.transform = `translate(${cx}px, ${cy}px)`;
     }, 15);  
-    const form = document.querySelector(".contact_form");
+
+    const form = document.querySelector(".form");
     const successMsg = document.querySelector("#success");
 
     form.addEventListener("submit", async (e) => {
-        e.preventDefault(); // 🚫 stops redirect
+        e.preventDefault(); 
 
         const formData = new FormData(form);
 
@@ -39,5 +40,4 @@ document.addEventListener("DOMContentLoaded", () => {
             form.reset();
         }
     });
-    
 });
