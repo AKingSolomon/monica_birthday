@@ -40,4 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
             form.reset();
         }
     });
+
+    const button = document.getElementById("instructions_button");
+    const instructions = document.getElementById("instructions");
+    const note_title = document.getElementById("note_title");
+
+    button.addEventListener("click", () => {
+        instructions.style.display = "none";
+        note_title.style.display = "flex";
+    });
 });

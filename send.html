@@ -3,16 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Send A Note</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
+<header>
+    <a href="index.html">
+    <img id="header_img" source src="images/18cake-removebg-preview.png">
+    </a>
+</header>
 <body>
+    <div id="instructions">
+        <h1 id="instructions_intro">
+            HELLO FRIENDS AND FAMILY
+        </h1>
+        <div id="instructions_text">
+            <h3>This page is for sending a note for Monica to read. </h3>
+            <h3>These will all be uploaded to another page that only Monica has access to, so no one else is reading your notes.</h3>
+            <h3>Make it short and sweet, make it super long, write 1, write 100, whatever makes your heart happy.</h3>
+            <h3>Have fun and say nice things!</h3>
+        </div>
+        <button id="instructions_button">Got It</button>
+    </div>
+    <h1 id="note_title" style="display: none">
+        SEND A NOTE
+    </h1>
     <div class="note_form">
         <form action="https://api.web3forms.com/submit" method="POST" class="form">
             <input type="hidden" name="access_key" value="e7658346-e0ce-4bd0-adf0-b7c10c694000">
 
-            <input type="text" name="name" placeholder="Your Name !" class="form_inputs" id="name_box" required>
+            <input type="text" name="name" placeholder="Your Name" class="form_inputs" id="name_box" required>
             <textarea name="message" placeholder="Message for the bday girl" class="form_inputs" id="message_box" required></textarea>
             <button type="submit" id="send_button">Send</button>
         </form>
