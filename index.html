@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONICA'S BIRTHDAY!!!</title>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="main_page">
         <div id="balloons">
-            <img id="balloons_img" source src="images/balloons.png">
+            <img id="balloons_img" src="images/balloons.png">
         </div>
         <div id="title_card">
             <h1 id="title_text">MONICA'S 18th BIRTHDAY</h1>
         </div>
+        <div id="page_links">
+            <div id="askMonica">
+                <p>Are You Monica?</p>
+                <div id="yesno_buttons">
+                    <button class="monica_buttons" id="yesMonica">Yes</button>
+                    <button class="monica_buttons" id="noMonica">No</button>
+                </div>
+            </div>
+            <div id="checkMonica" style="display: none">
+                <input type="password" placeholder="Enter Password" id="monica_password">
+            </div>
+            <div id="notMonica" style="display: none">
+                <div id="send_text">
+                    <a href="send.html" id="send_link">Send Note</a>
+                </div>
+            </div>
+            <div id="isMonica" style="display: none">
+                <div id="cards_text">
+                    <a href="cards.html" id="cards_link">View Cards</a>
+                </div>
+            </div>
+        </div>
         <div id="cake">
-            <img id="cake_img" source src="images/cake-removebg-preview.png">
+            <img id="cake_img" src="images/cake-removebg-preview.png">
         </div>
-        <div id="send_text">
-            <a href="send.html" id="send_link">Send Note</a>
-        </div>
+        
     </div>
 </body>
 </html>
