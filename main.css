@@ -26,8 +26,8 @@ header{
     text-align: center;
 }
 @keyframes balloonsIn {
-    from { transform: translate(-115%, -14%); }
-    to { transform: translate(-75%, -14%); }
+    from { transform: translate(-135%, -14%); }
+    to { transform: translate(-95%, -14%); }
 }
 #balloons {
     animation: balloonsIn 1s ease-out forwards;
@@ -39,8 +39,8 @@ header{
     width: 70%;
 }
 @keyframes cakeIn {
-    from { transform: translate(40%, 17%); }
-    to { transform: translate(0%, 17%); }
+    from { transform: translate(40%, 35%); }
+    to { transform: translate(0%, 35%); }
 }
 #cake {
     animation: cakeIn 1s ease-out forwards;
@@ -113,10 +113,10 @@ header{
     align-items: center;
     z-index: 99;
     width: 100%;
-    height: 10%;
+    height: 5%;
     padding-bottom: 25px;
-    justify-content: top;
-    transform: translate(-50%, -175%);
+    justify-content: center;
+    transform: translate(-50%, -300%);
 }
 #askMonica{
     display: flex;
@@ -141,6 +141,7 @@ header{
     display: flex;
     width: 40%;
     justify-content: space-around;
+    margin-top: -3%;
 }
 .monica_buttons{
     font-size: 3vw;
