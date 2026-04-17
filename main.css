@@ -1,3 +1,10 @@
+body {
+    width: 390px;
+    height: 844px;
+    transform: scale(1);
+    transform-origin: top center;
+}
+
 body{
     background-color: aqua;
 }
@@ -18,11 +25,12 @@ header{
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -55%);
     width: 100%;
+    color: rgb(6, 46, 4);
 }
 #title_text{
-    font-size: 10vw;
+    font-size: 250%;
     text-align: center;
 }
 @keyframes balloonsIn {
@@ -39,8 +47,8 @@ header{
     width: 70%;
 }
 @keyframes cakeIn {
-    from { transform: translate(40%, 35%); }
-    to { transform: translate(0%, 35%); }
+    from { transform: translate(40%, 38%); }
+    to { transform: translate(0%, 38%); }
 }
 #cake {
     animation: cakeIn 1s ease-out forwards;
@@ -58,7 +66,10 @@ header{
     transform: translate(-50%, 0%);
 }
 #send_link{
-    font-size: 5vw;
+    font-size: 150%;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(6, 46, 4);
 }
 
 .form{
@@ -104,30 +115,42 @@ header{
     border-width: 3px;
     border-radius: 5px;
     background-color: rgb(165, 214, 212);
+    font-weight: bold;
 }
 
 #page_links{
     display: flex;
-    background-color: rgb(165, 224, 219);
     border-radius: 5px;
     align-items: center;
     z-index: 99;
     width: 100%;
-    height: 5%;
+    height: 6%;
     padding-bottom: 25px;
     justify-content: center;
-    transform: translate(-50%, -300%);
+    transform: translate(-50%, -250%);
+    background-color: rgb(140, 238, 207);
+    background-image: linear-gradient(to top, rgb(121, 235, 191), rgb(0, 255, 238));
 }
 #askMonica{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    font-size: 5vw;
+    font-size: 150%;
+    padding-bottom: 5px;
+    color: rgb(6, 46, 4);
+    font-weight: bold;
 }
 #checkMonica{
     width: 100%;
     justify-content: center;
+    margin-top: 5%;
+}
+#monica_password{
+    border-color: rgb(6, 46, 4);
+    border-width: 3px;
+    border-radius: 5px;
+    padding: 3px;
 }
 #isMonica{
     width: 100%;
@@ -135,14 +158,60 @@ header{
 }
 #notMonica{
     width: 100%;
+    height: 100%;
     justify-content: center;
+    align-items: bottom;
+    margin-top: 8%;
 }
 #yesno_buttons{
     display: flex;
     width: 40%;
     justify-content: space-around;
-    margin-top: -3%;
+    margin-top: -4.5%;
 }
 .monica_buttons{
-    font-size: 3vw;
+    font-size: 70%;
+    border-color: rgb(21, 103, 47);
+    border-width: 3px;
+    color: rgb(6, 46, 4);
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(132, 222, 217);
+}
+#instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(6, 46, 4);
+}
+#note_title{
+    justify-content: center;
+}
+.send_page_button{
+    border-color: rgb(165, 214, 212);
+    border-radius: 5px;
+    background-color: rgb(165, 214, 212);
+    font-weight: bold;
+    padding: 5px;
+}
+#success{
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(0, 138, 138), rgb(121, 253, 121));
+    padding-bottom: 5%;
+}
+#added_text{
+    font-weight: bold;
+    color: rgb(21, 103, 47);
+    background-color: white;
+    border-color: rgb(27, 51, 27);
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

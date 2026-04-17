@@ -52,7 +52,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     createdAt: Date.now()
                 });
 
-                document.getElementById("success").style.display = "block";
+                document.getElementById("success").style.display = "flex";
+                form.style.display = "none";
                 form.reset();
             } catch (err) {
                 console.error("Error adding document:", err);
@@ -83,7 +84,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const not_monica = document.getElementById("notMonica");
     const is_monica = document.getElementById("isMonica");
 
-    const password = "password";
+    const password = "safefornow";
 
     if(yes_monica){
         yes_monica.addEventListener("click", () =>{
@@ -117,6 +118,15 @@ document.addEventListener("DOMContentLoaded", async () => {
             is_monica.style.display = "none";
             not_monica.style.display = "flex";
             check_monica.style.display = "none";
+        })
+    }
+
+    const another_note = document.getElementById("another_note");
+
+    if(another_note){
+        another_note.addEventListener("click", () =>{
+            form.style.display = "flex";
+            document.getElementById("success").style.display = "none";
         })
     }
 });
