@@ -310,8 +310,8 @@ header{
     transform-style:preserve-3d;
 }
 
-.note-card:hover .card-inner{
-    transform:rotateY(180deg);
+.note-card.flipped .card-inner{
+    transform: rotateY(180deg);
 }
 
 /* both sides */

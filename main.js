@@ -49,6 +49,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             </div>
             `;
 
+            card.addEventListener("click", () => {
+                card.classList.toggle("flipped");
+            });
+
             container.appendChild(card);
         });
     }
