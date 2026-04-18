@@ -27,9 +27,26 @@ document.addEventListener("DOMContentLoaded", async () => {
             const data = doc.data();
 
             const card = document.createElement("div");
+            card.classList.add("note-card");
+
             card.innerHTML = `
-                <h3>${data.name}</h3>
-                <p>${data.message}</p>
+                <div class="card-inner">
+
+                <div class="card-front">
+                    <div class="envelope">
+                        <div class="flap"></div>
+                        <div class="letter-label">
+                            From: ${data.name}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <h3>${data.name}</h3>
+                    <p>${data.message}</p>
+                </div>
+
+            </div>
             `;
 
             container.appendChild(card);
