@@ -97,6 +97,7 @@ header{
     bottom: 20%;
     left: 50%;
     transform: translate(-50%, 0%);
+    /*box-shadow: 0 0px 20px rgba(0,0,0,.25);*/
 }
 #send_link{
     font-size: 150%;
@@ -108,6 +109,7 @@ header{
     padding-right: 5%;
     padding-top: 2%;
     border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
 }
 #send_link:hover{
     font-size: 160%;
@@ -193,7 +195,7 @@ header{
     padding: 3px;
 }
 #isMonica{
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
     margin-top: 6%;
 }
@@ -205,6 +207,7 @@ header{
     background-color: rgb(192, 255, 246);
     padding: 5px;
     border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
 }
 #bf_link:hover{
     padding: 7px;
@@ -217,6 +220,7 @@ header{
     background-color: rgb(192, 255, 246);
     padding: 5px;
     border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
 }
 #cards_link:hover{
     padding: 7px;
