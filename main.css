@@ -7,7 +7,7 @@
     }
   }
 body{
-    background-color: aqua;
+    background-color: rgb(134, 255, 255);
 }
 .main_page {
     position: relative;
@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
 header{
-    background-image: linear-gradient(to right, rgb(184, 243, 230), aqua);
+    background-image: linear-gradient(to right, rgb(80, 243, 230), rgb(134, 255, 255));
     border-radius: 5px;
 }
 #header_img{
@@ -35,8 +35,8 @@ header{
     text-align: center;
 }
 @keyframes balloonsIn {
-    from { transform: translate(-135%, -14%); }
-    to { transform: translate(-95%, -14%); }
+    from { transform: translate(-145%, -7%); }
+    to { transform: translate(-105%, -7%); }
 }
 #balloons {
     animation: balloonsIn 1s ease-out forwards;
@@ -45,7 +45,7 @@ header{
     left: 50%;
 }
 #balloons_img{
-    width: 70%;
+    width: 100%;
 }
 @keyframes monica1In {
     from { transform: translate(50%, -5%); }
@@ -80,8 +80,8 @@ header{
     border-width: 10px;
 }
 @keyframes cakeIn {
-    from { transform: translate(40%, 38%); }
-    to { transform: translate(0%, 38%); }
+    from { transform: translate(60%, 42%); }
+    to { transform: translate(20%, 42%); }
 }
 #cake {
     animation: cakeIn 1s ease-out forwards;
@@ -90,7 +90,7 @@ header{
     left: 50%;
 }
 #cake_img{
-    width: 100%;
+    width: 70%;
 }
 #page_links{
     position: absolute;
@@ -156,8 +156,9 @@ header{
     border-color: rgb(27, 51, 27);
     border-width: 3px;
     border-radius: 5px;
-    background-color: rgb(165, 214, 212);
+    background-color: rgb(192, 252, 250);
     font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
 }
 
 #page_links{
@@ -171,7 +172,7 @@ header{
     justify-content: center;
     transform: translate(-50%, -250%);
     background-color: rgb(140, 238, 207);
-    background-image: linear-gradient(to top, rgb(121, 235, 191), rgb(0, 255, 238));
+    background-image: linear-gradient(to top, rgb(80, 235, 191), rgb(134, 255, 255));
 }
 #askMonica{
     display: flex;
@@ -245,7 +246,8 @@ header{
     color: rgb(6, 46, 4);
     font-weight: bold;
     border-radius: 5px;
-    background-color: rgb(132, 222, 217);
+    background-color: rgb(149, 254, 249);
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
 }
 #instructions{
     display: flex;
@@ -253,6 +255,14 @@ header{
     align-items: center;
     text-align: center;
     color: rgb(6, 46, 4);
+    background-color: rgb(107, 234, 234);
+    padding-bottom: 4%;
+    margin-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#instructions_button{
+    text-decoration: underline;
 }
 #note_title{
     justify-content: center;
