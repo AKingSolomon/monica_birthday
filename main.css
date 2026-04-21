@@ -401,7 +401,7 @@ header{
 }
 
 #card{
-    display: flex;
+    display: none;
     flex-direction: column;
     background: rgb(250, 255, 205);
     padding: 18px 22px;
@@ -412,4 +412,53 @@ header{
     color: #333;
     max-width: 500px;
     margin: 20px auto;
+}
+#outtro{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    font-weight: bold;
+}
+#outtro_text{
+    margin-top: 12%;
+}
+#outtro_img{
+    border: solid 5px;
+    border-style: groove;
+    margin-top: -4%;
+}
+#yap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(27, 51, 27);
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(80, 243, 230), rgb(192, 252, 237));
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+#bf_header{
+    text-align: center;
+    color: rgb(27, 51, 27);
+}
+#view_my_card{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 17px;
+    font-style: bold;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+
+    border-color: rgb(27, 51, 27);
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: rgb(192, 252, 250);
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
 }

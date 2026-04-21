@@ -148,4 +148,15 @@ document.addEventListener("DOMContentLoaded", async () => {
             document.getElementById("success").style.display = "none";
         })
     }
+
+    const button = document.getElementById("view_my_card");
+    const yap = document.getElementById("yap");
+    const card = document.getElementById("card");
+
+    if(button && yap && card){
+        button.addEventListener("click", () => {
+            yap.style.display = "none";
+            card.style.display = "block";
+        });
+    }
 });
