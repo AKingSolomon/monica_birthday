@@ -426,7 +426,6 @@ header{
 #outtro_img{
     border: solid 5px;
     border-style: groove;
-    margin-top: -4%;
 }
 #yap{
     display: flex;
