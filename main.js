@@ -105,8 +105,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const not_monica = document.getElementById("notMonica");
     const is_monica = document.getElementById("isMonica");
 
-    const password = "safefornow";
-
     if(yes_monica){
         yes_monica.addEventListener("click", () =>{
             ask_monica.style.display = "none";
@@ -118,7 +116,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (e.key === "Enter") {
                 const entered = monica_password.value;
 
-                if(entered == password){
+                if(entered == "excelsior" || entered == "Excelsior"){
                     ask_monica.style.display = "none";
                     is_monica.style.display = "flex";
                     not_monica.style.display = "none";
